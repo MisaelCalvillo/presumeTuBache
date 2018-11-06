@@ -8,3 +8,4 @@ Plataforma para reportar baches en tu ciudad.
 - Rafael Duran Ceceñas @Rafaduce
 - Rigo Romaniz Avila @rromaniz
 -Jeremias Castañeda Arreola @janaijc
+- Ana Bet  @AnaBetJim
