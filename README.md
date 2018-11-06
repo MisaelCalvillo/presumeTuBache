@@ -6,5 +6,6 @@ Plataforma para reportar baches en tu ciudad.
 - Sergio André López Pereo @SergioPereo
 - David Rebollo @dvidHD
 - Rafael Duran Ceceñas @Rafaduce
+- Rigo Romaniz Avila @rromaniz
+-Jeremias Castañeda Arreola @janaijc
 - Ana Bet  @AnaBetJim
-
