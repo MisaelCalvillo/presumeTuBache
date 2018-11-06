@@ -6,4 +6,4 @@ Plataforma para reportar baches en tu ciudad.
 
 
 
-- @SergioPereo
+- Sergio André López Pereo @SergioPereo
