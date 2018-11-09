@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
  /* Always set the map height explicitly to define the size of the div
   * element that contains the map. */
  
@@ -20,3 +21,44 @@
  .tarjeta {
      background-color: black;
  }
+=======
+                            /* Always set the map height explicitly to define the size of the div
+  * element that contains the map. */
+                        
+                        #map {
+                            height: 100%;
+                        }
+                        /* Optional: Makes the sample page fill the window. */
+                        
+                        html,
+                        body {
+                            font-family: 'Roboto', sans-serif;
+                            height: 100%;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        /* Optional: Makes the sample page fill the window. */
+                        
+                        .container {
+                            margin: 100px;
+                        }
+                        
+                        .tarjeta {
+                            background-color: black;
+                        }
+                        
+                        #home {
+                            background: url(./../img/home.png) no-repeat;
+                            background-size: cover;
+                            background-attachment: fixed;
+                            min-height: 700px;
+                        }
+                        
+                        #home .dark-overlay o {
+                            background-color: rgba(0, 0, 0, 0.7);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            min-height: 700px;
+>>>>>>> Stashed changes
