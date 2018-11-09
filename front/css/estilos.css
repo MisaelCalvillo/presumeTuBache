@@ -16,3 +16,12 @@ body {
     margin: 0;
     padding: 0;
 }
+ /* Optional: Makes the sample page fill the window. */
+ 
+ .container {
+     margin: 100px;
+ }
+ 
+ .tarjeta {
+     background-color: black;
+ }
