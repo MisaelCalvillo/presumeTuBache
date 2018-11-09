@@ -44,3 +44,7 @@ body {
   flex-direction: column;
   margin-bottom: 50px;
 }
+
+.comentario {
+  width: 250px;
+}
