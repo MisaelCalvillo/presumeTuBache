@@ -1,12 +1,18 @@
- /* Always set the map height explicitly to define the size of the div
+/* Always set the map height explicitly to define the size of the div
   * element that contains the map. */
+
 #map {
   height: 400px;
   width: 80%;
   margin: 0 auto;
 }
+
+
 /* Optional: Makes the sample page fill the window. */
-html, body {
-  margin: 0;
-  padding: 0;
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
