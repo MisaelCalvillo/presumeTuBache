@@ -4,7 +4,7 @@
 #map {
     height: 400px;
     width: 80%;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 
@@ -21,26 +21,12 @@ body {
 
 /* Optional: Makes the sample page fill the window. */
 
-.container {
-    margin: 100px;
-}
-
 .tarjeta {
     background-color: black;
 }
 
-#home {
-    background: url('./../img/home.png') no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 1200px;
-}
-
-#home .dark-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 1200px;
+.reporte {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
 }

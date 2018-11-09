@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 
 
@@ -37,22 +38,39 @@
                 <h2 class="text-white "> Presume tu Bache</h2>
                 <div class="dropdown">
                     <button class="btn btn-secondary navbar-toggler  text-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i class="material-icons" style="color:white">person</i> </button>
+        <i class="material-icons" style="color:white">person</i>
+ </button>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="#">Historial</a>
-                        <a class="dropdown-item" href="#">cerrar Sesion</a> </div>
+                        <a class="dropdown-item" href="#">cerrar Sesion</a>
+
+                    </div>
                 </div>
-        </div>
-        </nav>
+                <!-- fin navbar -->
+
+
+                <div class="container">
+                    <div id="map"></div>
+                </div>
+            </nav>
         </div>
         <!-- fin navbar -->
+        <div id="map"></div>
 
-
-        <div class="container">
-            <div id="map"></div>
+        <div class="container reporte">
+            <form class="d-flex">
+                <div class="form-group mr-3">
+                    <label for="lat">Latitud</label>
+                    <input type="email" class="form-control" id="lat" placeholder="Latitud">
+                    <small id="latitud" class="form-text text-muted">Ingresa las coordenadas del bache.</small>
+                </div>
+                <div class="form-group">
+                    <label for="lon">Longitud</label>
+                    <input type="text" class="form-control" id="lng" placeholder="Longitud">
+                </div>
+            </form>
+            <button id="reportar" type="button" class="btn btn-primary">Reportar bache</button>
         </div>
-
-
 
         <div class="container">
             <div class="card tarjeta" style="width:20rem">
@@ -65,7 +83,6 @@
                     <a href="#" class="text-light btn btn-outline-light btn-block btn-lg ">Nuevo Reporte</a>
                 </div>
             </div>
-        </div>
         </div>
     </header>
 
