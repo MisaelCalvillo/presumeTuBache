@@ -57,7 +57,7 @@ async function initMap() {
     document.getElementById('lat').value = map.getCenter().lat();
     document.getElementById('lng').value = map.getCenter().lng();
   });
-  $('<div/>').addClass('center_markergit').appendTo(map.getDiv())
+  $('<div/>').addClass('center_marker').appendTo(map.getDiv())
   
   for (var i = 0; i < baches.length; i++) {
     // Obten posiciones de los baches
