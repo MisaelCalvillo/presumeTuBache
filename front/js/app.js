@@ -39,6 +39,9 @@ function reportarBache() {
 async function initMap() {
   let baches = await fetchBaches();
 
+
+
+function initMap() {
   var robotix = [
     {lat: 19.277452, lng: -99.571786},
     {lat: 18.277452, lng: -99.571786},
@@ -66,5 +69,4 @@ async function initMap() {
 
   }
 }
-
 
