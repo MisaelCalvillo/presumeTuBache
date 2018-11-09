@@ -2,13 +2,14 @@
   * element that contains the map. */
 
 #map {
-  height: 400px;
-  width: 80%;
-  margin: 0 auto;
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 
 /* Optional: Makes the sample page fill the window. */
+
 html,
 body {
     font-family: 'Roboto', sans-serif;
@@ -16,12 +17,30 @@ body {
     margin: 0;
     padding: 0;
 }
- /* Optional: Makes the sample page fill the window. */
- 
- .container {
-     margin: 100px;
- }
- 
- .tarjeta {
-     background-color: black;
- }
+
+
+/* Optional: Makes the sample page fill the window. */
+
+.container {
+    margin: 100px;
+}
+
+.tarjeta {
+    background-color: black;
+}
+
+#home {
+    background: url('./../img/home.png') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 1200px;
+}
+
+#home .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 1200px;
+}
