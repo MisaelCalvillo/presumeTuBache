@@ -2,12 +2,13 @@
   * element that contains the map. */
 
 #map {
-    height: 100%;
+  height: 400px;
+  width: 80%;
+  margin: 30px auto;
 }
 
 
 /* Optional: Makes the sample page fill the window. */
-
 html,
 body {
     font-family: 'Roboto', sans-serif;
@@ -16,11 +17,13 @@ body {
     padding: 0;
 }
  /* Optional: Makes the sample page fill the window. */
- 
- .container {
-     margin: 100px;
- }
- 
+  
  .tarjeta {
      background-color: black;
  }
+
+.reporte {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
