@@ -16,26 +16,6 @@ body {
     background-color: black;
 }
 
-#map {
-    height: 100%;
-}
-
-html,
-body {
-    font-family: 'Roboto', sans-serif;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    margin: 100px;
-}
-
-.tarjeta {
-    background-color: black;
-}
-
 .reporte {
     display: flex;
     flex-direction: column;
