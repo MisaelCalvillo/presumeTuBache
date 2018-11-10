@@ -1,5 +1,6 @@
 var map;
 var marcadores = [];
+var currentZoom = 10;
 
 let reportarBtn = document.getElementById('reportar')
 reportarBtn.addEventListener('click', reportarBache);
@@ -13,35 +14,38 @@ async function fetchBaches() {
 }
 
 async function creaBache(bache) {
-  await axios.post('https://baches-app.herokuapp.com/api/v1/bache',{
+  return await axios.post('https://baches-app.herokuapp.com/api/v1/bache',{
     "latitud" : bache.lat,
     "longitud" : bache.lng,
-    "comentario" : "Primer bache de Xona"
+    "comentario" : bache.comentario
   }).then((res) => {
     console.log("Bache creado", res.data);
+    return {success: true}
   }).catch((error) => {
     console.error(error);
+    return {success: false}
   })
 }
 
-function reportarBache() {
+async function reportarBache() {
   let latitudInput = document.getElementById('lat').value;
   let longitudInput = document.getElementById('lng').value;
+  let comentario = document.getElementById('comment').value;
   let bache = {
     lat: latitudInput,
-    lng: longitudInput
+    lng: longitudInput,
+    "comentario": comentario
   }
-  creaBache(bache);
-  initMap();
+  let crearBacheRes = await creaBache(bache);
+  if (crearBacheRes.success) {
+    initMap();
+  }
 }
 
 
 async function initMap() {
   let baches = await fetchBaches();
 
-
-
-function initMap() {
   var robotix = [
     {lat: 19.277452, lng: -99.571786},
     {lat: 18.277452, lng: -99.571786},
@@ -51,10 +55,17 @@ function initMap() {
   ];
   
   map = new google.maps.Map(document.getElementById('map'), {
-    center: new google.maps.LatLng(robotix[0]),
-    zoom: 15,
+    center: new google.maps.LatLng({lat: Number(baches[baches.length - 1].latitud), lng: Number(baches[baches.length - 1].longitud)}),
+    zoom: currentZoom,
     mapTypeId: 'terrain'
   });
+
+  google.maps.event.addListener(map,'center_changed', function() {
+    document.getElementById('lat').value = map.getCenter().lat();
+    document.getElementById('lng').value = map.getCenter().lng();
+    currentZoom = map.getZoom();
+  });
+  $('<div/>').addClass('center_marker').appendTo(map.getDiv())
   
   for (var i = 0; i < baches.length; i++) {
     // Obten posiciones de los baches
